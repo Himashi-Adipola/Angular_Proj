@@ -1,0 +1,39 @@
+{
+   "baseUrl": "http://localhost:4200/",
+   "retries": {
+    "runMode": 1,
+    "openMode": 1
+   },
+   "pageLoadTimeout": 90000,
+   "defaultCommandTimeout": 10000,
+   "ignoreTestFiles": [
+      "**/__snapshots__/*",
+      "**/__image_snapshots__/*"
+   ],
+   "env": {
+      "cypress-plugin-snapshots": {
+         "autopassNewSnapshots": true,
+         "autoCleanUp": true,
+         "imageConfig": {
+            "threshold": 0.01,
+            "createDiffImage": false,
+            "resizeDevicePixelRatio": true,
+            "thresholdType": "percent"
+
+         },
+        "screenshotConfig": {
+            "blackout": [],
+            "capture": "fullPage",
+            "clip": null,
+            "disableTimersAndAnimations": true,
+            "log": false,
+            "scale": false,
+            "timeout": 30000,
+            "screenshotsFolder": "cypress/screenshots"
+         },
+         "updateSnapshots": false
+      }
+   }
+
+}
+
